@@ -1,0 +1,28 @@
+{
+  "axis_id": "z10",
+  "examples": [
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "initial=1; candidate maximum absolute drift approximately 0.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "positive",
+      "specification": "Rotation xprime=-y,yprime=x with candidate I=x^2+y^2 and exact samples on unit circle."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "initial=1 and maximum drift=3; candidate is not a first integral.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "counterexample",
+      "specification": "xprime=1, x0=1, times [0,1], candidate I=x^2."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "unsupported invariant_candidates; no automatic mass/energy guess.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "degenerate",
+      "specification": "No candidate callback or model invariant provider."
+    }
+  ],
+  "source_descriptor_sha256": "c52d1f44e977529750f1e6b614e78739a7458b83d2c65a350f433e11bb395368",
+  "status": "proposed_not_executed_as_written"
+}

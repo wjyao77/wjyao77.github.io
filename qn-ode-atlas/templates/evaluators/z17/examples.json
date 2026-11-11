@@ -1,0 +1,28 @@
+{
+  "axis_id": "z17",
+  "examples": [
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "all RHS norms=0 and endpoint displacement=0.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "positive",
+      "specification": "f=-x with equilibrium x0=0."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "Identical zero residual/return despite instability; no stable-attractor label.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "counterexample",
+      "specification": "f=x with equilibrium x0=0."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "RHS norms=1 and endpoint displacement=1; no equilibrium conclusion.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "degenerate",
+      "specification": "f=1 with x0=0 over [0,1]."
+    }
+  ],
+  "source_descriptor_sha256": "cd53aae31ae8cb1a37a96690218af3ff4202e5b4629eae9e33a1fa05c7dc7a9a",
+  "status": "proposed_not_executed_as_written"
+}

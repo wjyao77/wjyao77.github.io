@@ -1,0 +1,28 @@
+{
+  "axis_id": "z08",
+  "examples": [
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "Dense mu2=-1; a verified separate contraction certificate may establish a domain upper bound.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "positive",
+      "specification": "J=-I, unit scales."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "mu2=4 despite spectral abscissa -1, so eigenvalue stability is not contraction.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "counterexample",
+      "specification": "A=[[-1,10],[0,-1]]."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "Return directional_rayleigh_quotients and sampled_Jv_norms; mu2 numeric projection is null.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "degenerate",
+      "specification": "n=65, default dense cap 64."
+    }
+  ],
+  "source_descriptor_sha256": "09b503902f85834ce07072f10c1d6cae63a0ed188ac7f552e131a1908cee7439",
+  "status": "proposed_not_executed_as_written"
+}

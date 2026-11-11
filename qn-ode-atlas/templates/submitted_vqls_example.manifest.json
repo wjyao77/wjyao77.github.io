@@ -1,0 +1,7 @@
+{
+  "contract_version": "reviewed_qiskit_plugin_v1",
+  "kind": "quantum",
+  "plugin_id": "fixture_quantum_vqls_example",
+  "revision": "fixture_v1",
+  "source_sha256": "f3473ba981affc2c450235465392b9427335471885bc84a089482815a1e59cd0"
+}

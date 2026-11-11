@@ -1,0 +1,28 @@
+{
+  "axis_id": "z04",
+  "examples": [
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "Declared analytic label; proposition remains unknown.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "positive",
+      "specification": "Supply smoothness=analytic for f=-x."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "Any declaration remains unverified; a false analytic claim must not be promoted.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "counterexample",
+      "specification": "f=abs(x) with a supplied smoothness label."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "unsupported/missing declaration, not analytic by default.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "degenerate",
+      "specification": "Omit smoothness."
+    }
+  ],
+  "source_descriptor_sha256": "b972cfb294cb03f9453f9816cf58d6fb498631562e5912df410899761c16d2d0",
+  "status": "proposed_not_executed_as_written"
+}

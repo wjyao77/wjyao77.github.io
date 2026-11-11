@@ -1,0 +1,28 @@
+{
+  "axis_id": "z18",
+  "examples": [
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "Analytic equation claim: polynomial RHS has no finite-state poles.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "positive",
+      "specification": "Authoritative expression xprime=-x."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "No finite-state poles, yet exact solution 1/(1-t) blows up at t=1; do not claim global existence.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "counterexample",
+      "specification": "Authoritative expression xprime=x^2, x0=1."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "No analytic polynomial claim; unsupported singular_set.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "degenerate",
+      "specification": "Callback-only RHS, raw polynomial=[] flag, no singular distance."
+    }
+  ],
+  "source_descriptor_sha256": "049d7a6fc9d3e0f58317fac6208b205abe1d178d59fa9076bb37ee6719508428",
+  "status": "proposed_not_executed_as_written"
+}

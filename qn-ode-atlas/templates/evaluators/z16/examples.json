@@ -1,0 +1,28 @@
+{
+  "axis_id": "z16",
+  "examples": [
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "raw and centered crossings=3; centered half-crossing rate=0.5.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "positive",
+      "specification": "Exact x(t)=cos(pi*t), stored t=[0,1,2,3], unit scales."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "All samples equal 1, crossings=0; oscillation is missed.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "counterexample",
+      "specification": "Same oscillation sampled at t=[0,2,4]."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "Single point is blocked for multiple-times requirement; constant multi-time trajectory has zero crossings.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "degenerate",
+      "specification": "Single point or constant trajectory."
+    }
+  ],
+  "source_descriptor_sha256": "20132491572344213eedeb6f0c8bb967ee9f70de4c90c758f8373fab595ca66f",
+  "status": "proposed_not_executed_as_written"
+}

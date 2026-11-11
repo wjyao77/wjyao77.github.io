@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Frozen per-axis operational documentation",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "axis_id",
+    "name",
+    "registry_descriptor",
+    "engine_result_version",
+    "mathematical_definition",
+    "operational_scope",
+    "units",
+    "coordinate_convention",
+    "dependencies",
+    "projections",
+    "null_and_failure_states",
+    "evidence_permissions",
+    "mathematical_boundary",
+    "examples",
+    "existing_test_evidence",
+    "sources",
+    "authorship_and_review"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "axis_operational_document_v1"
+    },
+    "axis_id": {
+      "type": "string",
+      "pattern": "^z(0[1-9]|1[0-9]|20)$"
+    },
+    "registry_descriptor": {
+      "type": "object"
+    },
+    "examples": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "required": [
+          "role",
+          "specification",
+          "expected",
+          "execution_status"
+        ],
+        "properties": {
+          "role": {
+            "enum": [
+              "positive",
+              "counterexample",
+              "degenerate"
+            ]
+          },
+          "execution_status": {
+            "const": "proposed_not_executed_as_written"
+          }
+        }
+      }
+    }
+  },
+  "$comment": "Documentation, not proposal approval. Generic/new-axis proposals use ../evaluator-proposal-contract.json. Cross-field version/hash/test checks remain mandatory."
+}

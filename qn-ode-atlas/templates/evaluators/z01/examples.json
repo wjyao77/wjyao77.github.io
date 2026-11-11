@@ -1,0 +1,28 @@
+{
+  "axis_id": "z01",
+  "examples": [
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "dimension=2, analytic/equation, proposition true.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "positive",
+      "specification": "Two coordinates and x0=[1,0]."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "dimension remains 2; this does not report manifold dimension.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "counterexample",
+      "specification": "A two-state system constrained to a one-dimensional invariant curve."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "Context validation raises ValueError; no zero dimension result.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "degenerate",
+      "specification": "Declared dimension 2 but x0=[1]."
+    }
+  ],
+  "source_descriptor_sha256": "0855691d1fe1b3c1f23407494b248cc8dde6301ab57fbf25b62122ffd5ca5b9f",
+  "status": "proposed_not_executed_as_written"
+}

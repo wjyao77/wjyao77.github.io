@@ -1,0 +1,28 @@
+{
+  "axis_id": "z07",
+  "examples": [
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "sample derivative=-1.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "positive",
+      "specification": "f=-x at x=1, unit scales, point mode."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "y dot A y=8 although all eigenvalues are negative.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "counterexample",
+      "specification": "A=[[-1,10],[0,-1]], y=[1,1]."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "sample derivative=0 at the equilibrium; no stable or dissipative conclusion.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "degenerate",
+      "specification": "f=x at x0=0."
+    }
+  ],
+  "source_descriptor_sha256": "f60b424b517893d34b175acee59c3f2b169e02c949d5ac2c41a8e05bf6b913b8",
+  "status": "proposed_not_executed_as_written"
+}

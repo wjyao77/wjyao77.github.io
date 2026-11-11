@@ -1,0 +1,155 @@
+{
+  "schema_version": "axis_docs_manifest_v1",
+  "created_utc": "2026-11-10T08:30:56.120543+00:00",
+  "axes": [
+    {
+      "axis_id": "z01",
+      "descriptor_path": "docs\\evaluators\\z01\\descriptor.json",
+      "descriptor_sha256": "0855691d1fe1b3c1f23407494b248cc8dde6301ab57fbf25b62122ffd5ca5b9f",
+      "prompt_path": "docs\\evaluators\\z01\\prompt.md",
+      "prompt_sha256": "035c72ccba41e160b8e496b1100e4fff54da1f00c1c48d9213f5184eb311be5a"
+    },
+    {
+      "axis_id": "z02",
+      "descriptor_path": "docs\\evaluators\\z02\\descriptor.json",
+      "descriptor_sha256": "5503e9599234ffc35aaec9dddfeb73a19465c9ec567a17af68beb2ed9175c86c",
+      "prompt_path": "docs\\evaluators\\z02\\prompt.md",
+      "prompt_sha256": "1c12ba8f51accc05e5ba244edf5f70eea788eba507fcc9acf9f2c98cd5ddf5ff"
+    },
+    {
+      "axis_id": "z03",
+      "descriptor_path": "docs\\evaluators\\z03\\descriptor.json",
+      "descriptor_sha256": "5e834c8876d329fb439775925d76520ba15d3b6f49e33012d220f24ebdb9a8e1",
+      "prompt_path": "docs\\evaluators\\z03\\prompt.md",
+      "prompt_sha256": "419e7b304e44004bafbdd22af2c8cb46ab9b227bdf5dc593d787e22b1ad74ca2"
+    },
+    {
+      "axis_id": "z04",
+      "descriptor_path": "docs\\evaluators\\z04\\descriptor.json",
+      "descriptor_sha256": "b972cfb294cb03f9453f9816cf58d6fb498631562e5912df410899761c16d2d0",
+      "prompt_path": "docs\\evaluators\\z04\\prompt.md",
+      "prompt_sha256": "6fa30691a67f55d22f171340ff4596c3bb9e19bd993861c854930fe58beaee07"
+    },
+    {
+      "axis_id": "z05",
+      "descriptor_path": "docs\\evaluators\\z05\\descriptor.json",
+      "descriptor_sha256": "e973d040f8dce66819d77694ab5bf4d3535e40e2bd72ca3d8147c8a85f230a3b",
+      "prompt_path": "docs\\evaluators\\z05\\prompt.md",
+      "prompt_sha256": "f0d9976c6b9b26ef09455bf30eed115cac813b452c75cb9116d6d78cde6fb4ed"
+    },
+    {
+      "axis_id": "z06",
+      "descriptor_path": "docs\\evaluators\\z06\\descriptor.json",
+      "descriptor_sha256": "a678dcdf408c7837dcde02bf51977a7e60e58fe4a02cf3c375c65bf324c78821",
+      "prompt_path": "docs\\evaluators\\z06\\prompt.md",
+      "prompt_sha256": "edb69f6548225b688ec6675a9217ccc9bd8ce10f3f3f32c4ffb647c0a1ca3ad3"
+    },
+    {
+      "axis_id": "z07",
+      "descriptor_path": "docs\\evaluators\\z07\\descriptor.json",
+      "descriptor_sha256": "f60b424b517893d34b175acee59c3f2b169e02c949d5ac2c41a8e05bf6b913b8",
+      "prompt_path": "docs\\evaluators\\z07\\prompt.md",
+      "prompt_sha256": "b5cfbeb02f82270c9c95638a5fa3c0582cbce7ffda2239ba4928f0f09dfc5418"
+    },
+    {
+      "axis_id": "z08",
+      "descriptor_path": "docs\\evaluators\\z08\\descriptor.json",
+      "descriptor_sha256": "09b503902f85834ce07072f10c1d6cae63a0ed188ac7f552e131a1908cee7439",
+      "prompt_path": "docs\\evaluators\\z08\\prompt.md",
+      "prompt_sha256": "a4a182533251070c7e19d931d34dfe62ad66ed99b88cdd6501da10b9ed210ea5"
+    },
+    {
+      "axis_id": "z09",
+      "descriptor_path": "docs\\evaluators\\z09\\descriptor.json",
+      "descriptor_sha256": "27d7fc84d015e2c86d622a7da9d01fa54e52335867049dace08f5219ab194d1c",
+      "prompt_path": "docs\\evaluators\\z09\\prompt.md",
+      "prompt_sha256": "d3051f4fa1aa30349a4a4fba97fdf828bf8d885a263ce6d73a2cb16bf176e5f9"
+    },
+    {
+      "axis_id": "z10",
+      "descriptor_path": "docs\\evaluators\\z10\\descriptor.json",
+      "descriptor_sha256": "c52d1f44e977529750f1e6b614e78739a7458b83d2c65a350f433e11bb395368",
+      "prompt_path": "docs\\evaluators\\z10\\prompt.md",
+      "prompt_sha256": "77f86eda46c58ebf2b57abbc4fd3d0a3a69a58450873b370fe881b6fbb829288"
+    },
+    {
+      "axis_id": "z11",
+      "descriptor_path": "docs\\evaluators\\z11\\descriptor.json",
+      "descriptor_sha256": "2bff150da2675388f999809401b8ea0ab542c60dff0e9e73b293e3f63b4e82dd",
+      "prompt_path": "docs\\evaluators\\z11\\prompt.md",
+      "prompt_sha256": "9b829d6defbc394fc7a6d5378ec038ee967298a2b5a6d574fa920d2d7834070b"
+    },
+    {
+      "axis_id": "z12",
+      "descriptor_path": "docs\\evaluators\\z12\\descriptor.json",
+      "descriptor_sha256": "d886ab469286b31bbfcf2e681fdf98acc9bd7c51ed1c86c655686ef338fd2004",
+      "prompt_path": "docs\\evaluators\\z12\\prompt.md",
+      "prompt_sha256": "bffbb0b3410dd5e59abe6b1b5c4fbd71676df27ac17ae01412b06310d5d8547b"
+    },
+    {
+      "axis_id": "z13",
+      "descriptor_path": "docs\\evaluators\\z13\\descriptor.json",
+      "descriptor_sha256": "eb3651d1e2ae1f995446abf889f088dc377a8e9759f11f964e4784684e9fa52b",
+      "prompt_path": "docs\\evaluators\\z13\\prompt.md",
+      "prompt_sha256": "082c8e723e1e30393660a9b6824a009e380285a950afd6ade152df5d1618853e"
+    },
+    {
+      "axis_id": "z14",
+      "descriptor_path": "docs\\evaluators\\z14\\descriptor.json",
+      "descriptor_sha256": "e1ff59eb54684da4068209cea31eb6d7ad621dada6ebd83ae094715aa40f7610",
+      "prompt_path": "docs\\evaluators\\z14\\prompt.md",
+      "prompt_sha256": "c33ae0bab53f19cd4d525b4afa5b1be5b12a1691b86b3d9f500941d930e511ed"
+    },
+    {
+      "axis_id": "z15",
+      "descriptor_path": "docs\\evaluators\\z15\\descriptor.json",
+      "descriptor_sha256": "3a64fdc68d8cf2923195fdb8aec19e823b7143fd942e7674c1993e3b47138baf",
+      "prompt_path": "docs\\evaluators\\z15\\prompt.md",
+      "prompt_sha256": "08992864f6d052104d3665b54932e912aaaa34be43b9ee7df117cd855bcd4a71"
+    },
+    {
+      "axis_id": "z16",
+      "descriptor_path": "docs\\evaluators\\z16\\descriptor.json",
+      "descriptor_sha256": "20132491572344213eedeb6f0c8bb967ee9f70de4c90c758f8373fab595ca66f",
+      "prompt_path": "docs\\evaluators\\z16\\prompt.md",
+      "prompt_sha256": "19fa262c78625e9aaea9ff861cc9c16d24f2d5ebcd7c584df1be9cff916d4292"
+    },
+    {
+      "axis_id": "z17",
+      "descriptor_path": "docs\\evaluators\\z17\\descriptor.json",
+      "descriptor_sha256": "cd53aae31ae8cb1a37a96690218af3ff4202e5b4629eae9e33a1fa05c7dc7a9a",
+      "prompt_path": "docs\\evaluators\\z17\\prompt.md",
+      "prompt_sha256": "a9e7993e54c70d45f52bf6a3f1b70f8fe169c528b642f3a0b3454c3873679c20"
+    },
+    {
+      "axis_id": "z18",
+      "descriptor_path": "docs\\evaluators\\z18\\descriptor.json",
+      "descriptor_sha256": "049d7a6fc9d3e0f58317fac6208b205abe1d178d59fa9076bb37ee6719508428",
+      "prompt_path": "docs\\evaluators\\z18\\prompt.md",
+      "prompt_sha256": "95524b81f658ac78778ef2c3cdb86ffaf4a878bfb2613a09f00f15415c599c2e"
+    },
+    {
+      "axis_id": "z19",
+      "descriptor_path": "docs\\evaluators\\z19\\descriptor.json",
+      "descriptor_sha256": "012614f1445c724cded7090893da43a6b8064e4adb19a2053854404da727e4c9",
+      "prompt_path": "docs\\evaluators\\z19\\prompt.md",
+      "prompt_sha256": "b4270f98b863d15be5411224fdbe2a64fd7020749355c85b2e7f878b1eff2b19"
+    },
+    {
+      "axis_id": "z20",
+      "descriptor_path": "docs\\evaluators\\z20\\descriptor.json",
+      "descriptor_sha256": "43c17643ece9df7445fc8d05ff8c0ace61d8b36c9caf68e8a3c59a098cc758c7",
+      "prompt_path": "docs\\evaluators\\z20\\prompt.md",
+      "prompt_sha256": "3d789bc765d5fe22c1132d97e67ef26308a63c856016ba818c0db90a7322ab77"
+    }
+  ],
+  "source_bindings": {
+    "qn_atlas\\evaluators\\engine.py": "ff6989cda200adcc87169770656e86aeac9ba5a00ebc752aa6000c3f61d50fae",
+    "qn_atlas\\evaluators\\context.py": "5b56f1fd3ba3b46d95e0966fe6ec9eaad959d45b68b168503d8d4780daa19509",
+    "qn_atlas\\evaluators\\projections.py": "34301cecee3268b5d3b53fe24bac10666796f660b4f7aa0832d8d342f3bcb876",
+    "qn_atlas\\evaluators\\certification.py": "d74daa4b87d493cc3d94c082b13a35d66d3bdae6c6bf4d45d12f9bc05348c4d1"
+  },
+  "scope": "Frozen operational descriptions and per-axis proposal prompts; not new scientific certification.",
+  "review_status": "independently_reviewed_scoped",
+  "reviewer_agent": "/root/mathematical_audit"
+}

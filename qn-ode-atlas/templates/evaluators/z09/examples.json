@@ -1,0 +1,28 @@
+{
+  "axis_id": "z09",
+  "examples": [
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "divergence=-4.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "positive",
+      "specification": "J=diag(-1,-3), unit scales."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "divergence=0 despite one exponentially growing direction.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "counterexample",
+      "specification": "J=diag(1,-1)."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "divergence=0; do not infer a nondegenerate Hamiltonian structure.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "degenerate",
+      "specification": "J=0."
+    }
+  ],
+  "source_descriptor_sha256": "27d7fc84d015e2c86d622a7da9d01fa54e52335867049dace08f5219ab194d1c",
+  "status": "proposed_not_executed_as_written"
+}

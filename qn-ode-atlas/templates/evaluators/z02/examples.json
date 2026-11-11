@@ -1,0 +1,28 @@
+{
+  "axis_id": "z02",
+  "examples": [
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "density_min=density_max=0.5.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "positive",
+      "specification": "J=diag(-1,-2), identity scales."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "thresholded density=0, although one derivative is mathematically nonzero.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "counterexample",
+      "specification": "J=diag(1e-11,0), identity scales."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "density=0, no division by a zero matrix norm.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "degenerate",
+      "specification": "J=0 in two coordinates."
+    }
+  ],
+  "source_descriptor_sha256": "5503e9599234ffc35aaec9dddfeb73a19465c9ec567a17af68beb2ed9175c86c",
+  "status": "proposed_not_executed_as_written"
+}

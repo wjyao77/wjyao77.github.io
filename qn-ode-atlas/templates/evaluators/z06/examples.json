@@ -1,0 +1,28 @@
+{
+  "axis_id": "z06",
+  "examples": [
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "directional second derivative norm=2 up to floating error; halving difference approximately 0.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "positive",
+      "specification": "Scalar g(y)=y^2, point y=1, unit scales."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "The all-ones direction gives curvature 0 despite a genuinely nonlinear vector field.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "counterexample",
+      "specification": "g(y1,y2)=((y1-y2)^2,0) at y=(0,0)."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "Centered directional second difference is 0; vanishing local curvature does not establish linearity.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "degenerate",
+      "specification": "Scalar g(y)=y^3 at y=0."
+    }
+  ],
+  "source_descriptor_sha256": "a678dcdf408c7837dcde02bf51977a7e60e58fe4a02cf3c375c65bf324c78821",
+  "status": "proposed_not_executed_as_written"
+}

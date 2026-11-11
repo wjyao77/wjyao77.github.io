@@ -1,0 +1,28 @@
+{
+  "axis_id": "z03",
+  "examples": [
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "Declared degree 2 is displayed; it is not independently certified here.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "positive",
+      "specification": "Supply spec.nonlinearity={kind:polynomial,degree:2} for xprime=x^2."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "The declaration cannot acquire certified/analytic evidence merely from its text.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "counterexample",
+      "specification": "A callback disagrees with an unverified polynomial declaration."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "unsupported and missing structural declaration; no invented degree 0.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "degenerate",
+      "specification": "No nonlinearity declaration."
+    }
+  ],
+  "source_descriptor_sha256": "5e834c8876d329fb439775925d76520ba15d3b6f49e33012d220f24ebdb9a8e1",
+  "status": "proposed_not_executed_as_written"
+}

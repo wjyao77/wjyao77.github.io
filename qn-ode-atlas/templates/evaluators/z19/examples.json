@@ -1,0 +1,28 @@
+{
+  "axis_id": "z19",
+  "examples": [
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "initial=1, final=exp(-1), sample_max=1, amplification=1.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "positive",
+      "specification": "x(t)=exp(-t), x0=1 on [0,1], unit scales."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "scaled norm=sqrt(2), not physical norm sqrt(5).",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "counterexample",
+      "specification": "Physical state [1,2], state scales [1,2]."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "initial=0, sample_max=1, amplification=null rather than infinity or zero.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "degenerate",
+      "specification": "xprime=1, x0=0, t=[0,1]."
+    }
+  ],
+  "source_descriptor_sha256": "012614f1445c724cded7090893da43a6b8064e4adb19a2053854404da727e4c9",
+  "status": "proposed_not_executed_as_written"
+}

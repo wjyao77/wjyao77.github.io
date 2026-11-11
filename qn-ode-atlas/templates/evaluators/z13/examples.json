@@ -1,0 +1,28 @@
+{
+  "axis_id": "z13",
+  "examples": [
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "real_rate_ratios=[100] in point mode; spectral abscissa=-1; imaginary rate=0.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "positive",
+      "specification": "J=diag(-1,-100)."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "real-rate ratio=null, imaginary_rate_max=1; null does not mean no time-step restriction.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "counterexample",
+      "specification": "Pure rotation eigenvalues +/-i."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "real-rate ratio=null; abscissa and imaginary rate are 0; never divide 0 by 0.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "degenerate",
+      "specification": "J=0."
+    }
+  ],
+  "source_descriptor_sha256": "eb3651d1e2ae1f995446abf889f088dc377a8e9759f11f964e4784684e9fa52b",
+  "status": "proposed_not_executed_as_written"
+}

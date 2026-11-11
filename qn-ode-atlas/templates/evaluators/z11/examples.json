@@ -1,0 +1,28 @@
+{
+  "axis_id": "z11",
+  "examples": [
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "standard symplectic residual=0; gradient curl residual=2*sqrt(2).",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "positive",
+      "specification": "Two-dimensional rotation A=[[0,1],[-1,0]], unit scales."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "gradient curl residual=0 but symplectic residual=2*sqrt(2): gradient compatibility is not Hamiltonian compatibility.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "counterexample",
+      "specification": "A=-I in dimension 2."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "physical_standard_symplectic_residual_max=null; do not invent a standard symplectic form.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "degenerate",
+      "specification": "Odd state dimension 3."
+    }
+  ],
+  "source_descriptor_sha256": "2bff150da2675388f999809401b8ea0ab542c60dff0e9e73b293e3f63b4e82dd",
+  "status": "proposed_not_executed_as_written"
+}

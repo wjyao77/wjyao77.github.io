@@ -1,0 +1,181 @@
+{
+  "schema_version": "axis_operational_document_v1",
+  "axis_id": "z09",
+  "name": "Divergence",
+  "registry_descriptor": {
+    "axis_id": "z09",
+    "axis_version": "2",
+    "implementation_id": "z09.numerical",
+    "implementation_version": "1",
+    "name": "volume_change",
+    "dependencies": [
+      "jacobians"
+    ],
+    "output_kind": "structured",
+    "output_schema": "AxisResult.v2"
+  },
+  "engine_result_version": {
+    "axis_version": "2",
+    "implementation_version": "numerical_v1"
+  },
+  "mathematical_definition": "For each sampled scaled Jacobian return trace(J); aggregate min/max.",
+  "operational_scope": "point or trajectory; separate certified domain claim allowed",
+  "units": "inverse scaled time",
+  "coordinate_convention": {
+    "state": "y=D^-1*x, D=diag(positive state scales)",
+    "time": "tau=t/Ts with positive Ts; stored time arguments remain physical t",
+    "rhs": "g(t,y)=Ts*D^-1*f(t,D*y)",
+    "jacobian": "J=Ts*D^-1*A*D",
+    "norm": "L2 for vectors/operator norm; Frobenius only where stated"
+  },
+  "dependencies": [
+    "jacobians"
+  ],
+  "implicit_dependencies": [
+    "static declarations attempted first; numerical dependencies are lazy and cached per immutable problem/scenario binding"
+  ],
+  "projections": [
+    {
+      "projection_id": "z09.divergence.sample_max.v1",
+      "projection_version": "1",
+      "axis_id": "z09",
+      "axis_version": "2",
+      "field": "divergence_sample_max",
+      "source": "value",
+      "accepted_evidence": [
+        "numerical"
+      ],
+      "accepted_scope": [
+        "trajectory",
+        "point"
+      ]
+    },
+    {
+      "projection_id": "z09.divergence.domain_upper_bound.v1",
+      "projection_version": "1",
+      "axis_id": "z09",
+      "axis_version": "2",
+      "field": "divergence_domain_upper_bound",
+      "source": "claims",
+      "accepted_evidence": [
+        "certified"
+      ],
+      "accepted_scope": [
+        "domain"
+      ]
+    }
+  ],
+  "null_and_failure_states": {
+    "policy": "null means unavailable, never zero-imputed; projection requires matching version, scope, evidence and a finite numeric non-boolean field",
+    "execution_status": [
+      "completed",
+      "unsupported",
+      "blocked",
+      "failed",
+      "budget_exceeded"
+    ],
+    "construction_errors": "Invalid state/scale or mutated binding can raise ValueError before an AxisResult is produced.",
+    "high_dimension": "Dense Jacobian dependencies are unsupported above max_dense_dimension (default 64); only z08 uses directional fallback."
+  },
+  "evidence_permissions": {
+    "numerical": "Measurements are point/trajectory observations with proposition_truth unknown, not universal proofs.",
+    "declaration": "Applicable supplied model claims remain declared with unknown truth; mathematical prose is not independently verified.",
+    "analytic": "Only implemented structural constructions may assert their narrowly stated result: z01 dimension; z18 authoritative finite polynomial no-pole claim.",
+    "certified": "Supported independently verified bound claim kind divergence. Concrete certificate must bind authoritative expression AST, parameters, state box, requested time interval, and scales; the independent verifier recomputes it. Numeric output remains separate."
+  },
+  "mathematical_boundary": "Trace sign at samples does not prove domain volume contraction, invariant sets or attractors.",
+  "implementation_limitations": [
+    "A reference may cover a subinterval; inspect requested/evaluated intervals and full_original_window before claiming full-horizon coverage.",
+    "Default reference, RHS and Jacobian samples are numerical approximations, not interval bounds.",
+    "Code and projection source hashes bind this document; refresh after changes."
+  ],
+  "examples": [
+    {
+      "role": "positive",
+      "specification": "J=diag(-1,-3), unit scales.",
+      "expected": "divergence=-4.",
+      "execution_status": "proposed_not_executed_as_written",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification."
+    },
+    {
+      "role": "counterexample",
+      "specification": "J=diag(1,-1).",
+      "expected": "divergence=0 despite one exponentially growing direction.",
+      "execution_status": "proposed_not_executed_as_written",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification."
+    },
+    {
+      "role": "degenerate",
+      "specification": "J=0.",
+      "expected": "divergence=0; do not infer a nondegenerate Hamiltonian structure.",
+      "execution_status": "proposed_not_executed_as_written",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification."
+    }
+  ],
+  "existing_test_evidence": {
+    "path": "tests/test_evaluators.py",
+    "test_names": [
+      "test_shared_jacobian_and_tangent",
+      "test_authoritative_expression_and_bound_certificate",
+      "test_existing_diagnostic_scalar_semantics"
+    ],
+    "run_command": "python -m unittest discover -s tests -p test_evaluators.py -v",
+    "suite_observed_result": "14 tests passed during documentation authoring",
+    "coverage_note": "Only the named tests are relevant evidence for this axis; absence of names means no dedicated test claimed. Proposed examples above remain unexecuted as written.",
+    "test_file_sha256": "5d4e021d6225ef5664ada50009e2490ccbbee473b0f1532e581f6d055b5734c1"
+  },
+  "sources": [
+    {
+      "locator": "qn_atlas\\evaluators\\axis_z09.py",
+      "role": "actual descriptor and dispatch",
+      "sha256": "ddea7497cf5e41788dca783fe9bb5f33554602bb49ad322558540ea24b7d2c4c"
+    },
+    {
+      "locator": "qn_atlas\\evaluators\\engine.py",
+      "role": "actual implementation, not an external mathematical theorem",
+      "sha256": "ff6989cda200adcc87169770656e86aeac9ba5a00ebc752aa6000c3f61d50fae"
+    },
+    {
+      "locator": "qn_atlas\\evaluators\\context.py",
+      "role": "actual implementation, not an external mathematical theorem",
+      "sha256": "5b56f1fd3ba3b46d95e0966fe6ec9eaad959d45b68b168503d8d4780daa19509"
+    },
+    {
+      "locator": "qn_atlas\\evaluators\\projections.py",
+      "role": "actual implementation, not an external mathematical theorem",
+      "sha256": "34301cecee3268b5d3b53fe24bac10666796f660b4f7aa0832d8d342f3bcb876"
+    },
+    {
+      "locator": "qn_atlas\\evaluators\\certification.py",
+      "role": "actual implementation, not an external mathematical theorem",
+      "sha256": "d74daa4b87d493cc3d94c082b13a35d66d3bdae6c6bf4d45d12f9bc05348c4d1"
+    },
+    {
+      "locator": "docs/evaluator-proposal-contract.json",
+      "role": "new evaluator proposal contract"
+    },
+    {
+      "locator": "docs/evaluator-proposal-guidance.md",
+      "role": "review and trusted evidence boundary"
+    }
+  ],
+  "authorship_and_review": {
+    "mathematical_author_model_required": "gpt-6-astra",
+    "independent_mathematical_reviewer_model_required": "gpt-6-astra",
+    "engineering_model_permitted": "gpt-6.1-sol",
+    "model_name_is_not_identity_proof": true,
+    "status": "independently_reviewed_scoped",
+    "certification_created_by_document": false,
+    "independent_review": {
+      "reviewer_agent": "/root/mathematical_audit",
+      "decision": "no_mathematical_blocker_with_scope_limits",
+      "review_scope": "Read-only review of all 20 formulas/boundaries and 60 proposed examples; source hashes checked against actual files.",
+      "limitations": [
+        "The 60 example specifications remain unexecuted as written.",
+        "Existing 14-test suite is related regression evidence, not a substitute for those examples.",
+        "Review of documentation is not automatic evaluator certification or deployment approval."
+      ],
+      "identity_provenance": "Reviewer identity/model provenance must be authenticated from orchestration records, not this JSON."
+    }
+  }
+}

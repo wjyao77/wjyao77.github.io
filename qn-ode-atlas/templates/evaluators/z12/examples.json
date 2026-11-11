@@ -1,0 +1,28 @@
+{
+  "axis_id": "z12",
+  "examples": [
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "minimum lower margin=0.4; minimum upper margin=0.5; all samples nonnegative.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "positive",
+      "specification": "Reference x=[0.5,0.4], domain [0,1]."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "Both samples are positive although the trajectory leaves the nonnegative domain after t=0.5.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "counterexample",
+      "specification": "xprime=-1, x0=0.5, observe only t=0 and t=0.25."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "minimum margin=0 and nonnegative=True; inward-pointing derivative still needs a separate check.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "degenerate",
+      "specification": "A stored sample lies exactly at lower=0."
+    }
+  ],
+  "source_descriptor_sha256": "d886ab469286b31bbfcf2e681fdf98acc9bd7c51ed1c86c655686ef338fd2004",
+  "status": "proposed_not_executed_as_written"
+}

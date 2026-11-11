@@ -1,0 +1,28 @@
+{
+  "axis_id": "z05",
+  "examples": [
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "Display autonomous with declared evidence only.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "positive",
+      "specification": "f=-x, supplied autonomous declaration."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "Zero trajectory does not prove autonomy; explicit time dependence remains possible.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "counterexample",
+      "specification": "f=sin(t)*x starting at x0=0."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "unsupported; do not default to autonomous.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "degenerate",
+      "specification": "No time-dependence specification."
+    }
+  ],
+  "source_descriptor_sha256": "e973d040f8dce66819d77694ab5bf4d3535e40e2bd72ca3d8147c8a85f230a3b",
+  "status": "proposed_not_executed_as_written"
+}

@@ -1,0 +1,28 @@
+{
+  "axis_id": "z15",
+  "examples": [
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "terminal gain=exp(-1), peak gain=1, log gain per scaled time=-1; substep disagreement approximately 0.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "positive",
+      "specification": "Constant A=-I over physical [0,1], unit scales."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "Compare with norm of exp(A*t)=exp(-t)*[[1,10*t],[0,1]]; negative eigenvalues need not prevent transient gain.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "counterexample",
+      "specification": "Constant A=[[-1,10],[0,-1]]."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "unsupported classical tangent surrogate; a single-time point also has no time interval.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "degenerate",
+      "specification": "Declared switching breakpoints or nonsmooth/piecewise/Lipschitz smoothness."
+    }
+  ],
+  "source_descriptor_sha256": "3a64fdc68d8cf2923195fdb8aec19e823b7143fd942e7674c1993e3b47138baf",
+  "status": "proposed_not_executed_as_written"
+}

@@ -1,0 +1,28 @@
+{
+  "axis_id": "z14",
+  "examples": [
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "mu2=-1; abscissa gap=0.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "positive",
+      "specification": "Symmetric J=diag(-1,-3)."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "mu2=4; alpha=-1; gap=5 despite stable eigenvalues.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "counterexample",
+      "specification": "A=[[-1,10],[0,-1]]."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "gap=0; this alone establishes no global nonlinear reduction.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "degenerate",
+      "specification": "J=0."
+    }
+  ],
+  "source_descriptor_sha256": "e1ff59eb54684da4068209cea31eb6d7ad621dada6ebd83ae094715aa40f7610",
+  "status": "proposed_not_executed_as_written"
+}

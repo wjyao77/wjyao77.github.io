@@ -1,0 +1,28 @@
+{
+  "axis_id": "z20",
+  "examples": [
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "Centered matrix has rank 1 at the stated roundoff threshold.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "positive",
+      "specification": "Samples [0,0],[1,2],[2,4]."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "Centered matrix rank=2 despite a one-dimensional nonlinear manifold.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "counterexample",
+      "specification": "Samples [1,0],[0,1],[-1,0],[0,-1] on the unit circle."
+    },
+    {
+      "execution_status": "proposed_not_executed_as_written",
+      "expected": "Centered singular values all zero and sample rank=0; underlying state dimension does not become zero.",
+      "rationale": "Independent mathematical expectation; existing tests below may cover related cases but do not constitute execution of this exact specification.",
+      "role": "degenerate",
+      "specification": "Constant samples or a single stored point."
+    }
+  ],
+  "source_descriptor_sha256": "43c17643ece9df7445fc8d05ff8c0ace61d8b36c9caf68e8a3c59a098cc758c7",
+  "status": "proposed_not_executed_as_written"
+}

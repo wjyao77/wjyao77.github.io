@@ -1,0 +1,263 @@
+{
+  "algorithm": {
+    "functions": [
+      "supports",
+      "prepare",
+      "build",
+      "decode"
+    ],
+    "manifest_url": "/qn-ode-atlas/templates/submitted_vqls_example.manifest.json",
+    "review_scope": "Independent scoped mathematical review and actual fixture tests. Requires pinned qn_atlas/Aer; single implicit-step triangular-domain example, exact-expectation optimizer and final sampler. Fixture review is not uploaded-source production approval, package activation or VM acceptance.",
+    "review_status": "independently_reviewed_fixture_only",
+    "source_path": "qn_atlas/quantum/submitted_vqls_example.py",
+    "source_sha256": "f3473ba981affc2c450235465392b9427335471885bc84a089482815a1e59cd0",
+    "source_url": "/qn-ode-atlas/templates/submitted_vqls_example.py",
+    "proposal_url": "/qn-ode-atlas/templates/submitted_vqls_example.proposal.json",
+    "proposal_sha256": "ea4b87e69784d37052eed153ea58b6d62cee62ccb7c6aa06b3370d51c35045be",
+    "proposal_status": "unreviewed_template_author_must_be_filled"
+  },
+  "algorithm_status": "reviewed_fixture_download_available_not_production_activated",
+  "evaluator_manifest_url": "/qn-ode-atlas/templates/evaluators/manifest.json",
+  "evaluator_review_status": "independently_reviewed_scoped",
+  "evaluators": [
+    {
+      "axis_id": "z01",
+      "descriptor_sha256": "0855691d1fe1b3c1f23407494b248cc8dde6301ab57fbf25b62122ffd5ca5b9f",
+      "descriptor_url": "/qn-ode-atlas/templates/evaluators/z01/descriptor.json",
+      "examples_status": "proposed_not_executed_as_written",
+      "examples_url": "/qn-ode-atlas/templates/evaluators/z01/examples.json",
+      "name": "dimension",
+      "prompt_sha256": "035c72ccba41e160b8e496b1100e4fff54da1f00c1c48d9213f5184eb311be5a",
+      "prompt_url": "/qn-ode-atlas/templates/evaluators/z01/prompt.md",
+      "review_status": "independently_reviewed_scoped"
+    },
+    {
+      "axis_id": "z02",
+      "descriptor_sha256": "5503e9599234ffc35aaec9dddfeb73a19465c9ec567a17af68beb2ed9175c86c",
+      "descriptor_url": "/qn-ode-atlas/templates/evaluators/z02/descriptor.json",
+      "examples_status": "proposed_not_executed_as_written",
+      "examples_url": "/qn-ode-atlas/templates/evaluators/z02/examples.json",
+      "name": "sparsity_locality",
+      "prompt_sha256": "1c12ba8f51accc05e5ba244edf5f70eea788eba507fcc9acf9f2c98cd5ddf5ff",
+      "prompt_url": "/qn-ode-atlas/templates/evaluators/z02/prompt.md",
+      "review_status": "independently_reviewed_scoped"
+    },
+    {
+      "axis_id": "z03",
+      "descriptor_sha256": "5e834c8876d329fb439775925d76520ba15d3b6f49e33012d220f24ebdb9a8e1",
+      "descriptor_url": "/qn-ode-atlas/templates/evaluators/z03/descriptor.json",
+      "examples_status": "proposed_not_executed_as_written",
+      "examples_url": "/qn-ode-atlas/templates/evaluators/z03/examples.json",
+      "name": "nonlinearity_type",
+      "prompt_sha256": "419e7b304e44004bafbdd22af2c8cb46ab9b227bdf5dc593d787e22b1ad74ca2",
+      "prompt_url": "/qn-ode-atlas/templates/evaluators/z03/prompt.md",
+      "review_status": "independently_reviewed_scoped"
+    },
+    {
+      "axis_id": "z04",
+      "descriptor_sha256": "b972cfb294cb03f9453f9816cf58d6fb498631562e5912df410899761c16d2d0",
+      "descriptor_url": "/qn-ode-atlas/templates/evaluators/z04/descriptor.json",
+      "examples_status": "proposed_not_executed_as_written",
+      "examples_url": "/qn-ode-atlas/templates/evaluators/z04/examples.json",
+      "name": "regularity_events",
+      "prompt_sha256": "6fa30691a67f55d22f171340ff4596c3bb9e19bd993861c854930fe58beaee07",
+      "prompt_url": "/qn-ode-atlas/templates/evaluators/z04/prompt.md",
+      "review_status": "independently_reviewed_scoped"
+    },
+    {
+      "axis_id": "z05",
+      "descriptor_sha256": "e973d040f8dce66819d77694ab5bf4d3535e40e2bd72ca3d8147c8a85f230a3b",
+      "descriptor_url": "/qn-ode-atlas/templates/evaluators/z05/descriptor.json",
+      "examples_status": "proposed_not_executed_as_written",
+      "examples_url": "/qn-ode-atlas/templates/evaluators/z05/examples.json",
+      "name": "time_dependence",
+      "prompt_sha256": "f0d9976c6b9b26ef09455bf30eed115cac813b452c75cb9116d6d78cde6fb4ed",
+      "prompt_url": "/qn-ode-atlas/templates/evaluators/z05/prompt.md",
+      "review_status": "independently_reviewed_scoped"
+    },
+    {
+      "axis_id": "z06",
+      "descriptor_sha256": "a678dcdf408c7837dcde02bf51977a7e60e58fe4a02cf3c375c65bf324c78821",
+      "descriptor_url": "/qn-ode-atlas/templates/evaluators/z06/descriptor.json",
+      "examples_status": "proposed_not_executed_as_written",
+      "examples_url": "/qn-ode-atlas/templates/evaluators/z06/examples.json",
+      "name": "nonlinearity_strength",
+      "prompt_sha256": "edb69f6548225b688ec6675a9217ccc9bd8ce10f3f3f32c4ffb647c0a1ca3ad3",
+      "prompt_url": "/qn-ode-atlas/templates/evaluators/z06/prompt.md",
+      "review_status": "independently_reviewed_scoped"
+    },
+    {
+      "axis_id": "z07",
+      "descriptor_sha256": "f60b424b517893d34b175acee59c3f2b169e02c949d5ac2c41a8e05bf6b913b8",
+      "descriptor_url": "/qn-ode-atlas/templates/evaluators/z07/descriptor.json",
+      "examples_status": "proposed_not_executed_as_written",
+      "examples_url": "/qn-ode-atlas/templates/evaluators/z07/examples.json",
+      "name": "energy_dissipation",
+      "prompt_sha256": "b5cfbeb02f82270c9c95638a5fa3c0582cbce7ffda2239ba4928f0f09dfc5418",
+      "prompt_url": "/qn-ode-atlas/templates/evaluators/z07/prompt.md",
+      "review_status": "independently_reviewed_scoped"
+    },
+    {
+      "axis_id": "z08",
+      "descriptor_sha256": "09b503902f85834ce07072f10c1d6cae63a0ed188ac7f552e131a1908cee7439",
+      "descriptor_url": "/qn-ode-atlas/templates/evaluators/z08/descriptor.json",
+      "examples_status": "proposed_not_executed_as_written",
+      "examples_url": "/qn-ode-atlas/templates/evaluators/z08/examples.json",
+      "name": "contractivity",
+      "prompt_sha256": "a4a182533251070c7e19d931d34dfe62ad66ed99b88cdd6501da10b9ed210ea5",
+      "prompt_url": "/qn-ode-atlas/templates/evaluators/z08/prompt.md",
+      "review_status": "independently_reviewed_scoped"
+    },
+    {
+      "axis_id": "z09",
+      "descriptor_sha256": "27d7fc84d015e2c86d622a7da9d01fa54e52335867049dace08f5219ab194d1c",
+      "descriptor_url": "/qn-ode-atlas/templates/evaluators/z09/descriptor.json",
+      "examples_status": "proposed_not_executed_as_written",
+      "examples_url": "/qn-ode-atlas/templates/evaluators/z09/examples.json",
+      "name": "volume_change",
+      "prompt_sha256": "d3051f4fa1aa30349a4a4fba97fdf828bf8d885a263ce6d73a2cb16bf176e5f9",
+      "prompt_url": "/qn-ode-atlas/templates/evaluators/z09/prompt.md",
+      "review_status": "independently_reviewed_scoped"
+    },
+    {
+      "axis_id": "z10",
+      "descriptor_sha256": "c52d1f44e977529750f1e6b614e78739a7458b83d2c65a350f433e11bb395368",
+      "descriptor_url": "/qn-ode-atlas/templates/evaluators/z10/descriptor.json",
+      "examples_status": "proposed_not_executed_as_written",
+      "examples_url": "/qn-ode-atlas/templates/evaluators/z10/examples.json",
+      "name": "invariants",
+      "prompt_sha256": "77f86eda46c58ebf2b57abbc4fd3d0a3a69a58450873b370fe881b6fbb829288",
+      "prompt_url": "/qn-ode-atlas/templates/evaluators/z10/prompt.md",
+      "review_status": "independently_reviewed_scoped"
+    },
+    {
+      "axis_id": "z11",
+      "descriptor_sha256": "2bff150da2675388f999809401b8ea0ab542c60dff0e9e73b293e3f63b4e82dd",
+      "descriptor_url": "/qn-ode-atlas/templates/evaluators/z11/descriptor.json",
+      "examples_status": "proposed_not_executed_as_written",
+      "examples_url": "/qn-ode-atlas/templates/evaluators/z11/examples.json",
+      "name": "geometric_structure",
+      "prompt_sha256": "9b829d6defbc394fc7a6d5378ec038ee967298a2b5a6d574fa920d2d7834070b",
+      "prompt_url": "/qn-ode-atlas/templates/evaluators/z11/prompt.md",
+      "review_status": "independently_reviewed_scoped"
+    },
+    {
+      "axis_id": "z12",
+      "descriptor_sha256": "d886ab469286b31bbfcf2e681fdf98acc9bd7c51ed1c86c655686ef338fd2004",
+      "descriptor_url": "/qn-ode-atlas/templates/evaluators/z12/descriptor.json",
+      "examples_status": "proposed_not_executed_as_written",
+      "examples_url": "/qn-ode-atlas/templates/evaluators/z12/examples.json",
+      "name": "invariant_domain",
+      "prompt_sha256": "bffbb0b3410dd5e59abe6b1b5c4fbd71676df27ac17ae01412b06310d5d8547b",
+      "prompt_url": "/qn-ode-atlas/templates/evaluators/z12/prompt.md",
+      "review_status": "independently_reviewed_scoped"
+    },
+    {
+      "axis_id": "z13",
+      "descriptor_sha256": "eb3651d1e2ae1f995446abf889f088dc377a8e9759f11f964e4784684e9fa52b",
+      "descriptor_url": "/qn-ode-atlas/templates/evaluators/z13/descriptor.json",
+      "examples_status": "proposed_not_executed_as_written",
+      "examples_url": "/qn-ode-atlas/templates/evaluators/z13/examples.json",
+      "name": "stiffness",
+      "prompt_sha256": "082c8e723e1e30393660a9b6824a009e380285a950afd6ade152df5d1618853e",
+      "prompt_url": "/qn-ode-atlas/templates/evaluators/z13/prompt.md",
+      "review_status": "independently_reviewed_scoped"
+    },
+    {
+      "axis_id": "z14",
+      "descriptor_sha256": "e1ff59eb54684da4068209cea31eb6d7ad621dada6ebd83ae094715aa40f7610",
+      "descriptor_url": "/qn-ode-atlas/templates/evaluators/z14/descriptor.json",
+      "examples_status": "proposed_not_executed_as_written",
+      "examples_url": "/qn-ode-atlas/templates/evaluators/z14/examples.json",
+      "name": "transient_growth",
+      "prompt_sha256": "c33ae0bab53f19cd4d525b4afa5b1be5b12a1691b86b3d9f500941d930e511ed",
+      "prompt_url": "/qn-ode-atlas/templates/evaluators/z14/prompt.md",
+      "review_status": "independently_reviewed_scoped"
+    },
+    {
+      "axis_id": "z15",
+      "descriptor_sha256": "3a64fdc68d8cf2923195fdb8aec19e823b7143fd942e7674c1993e3b47138baf",
+      "descriptor_url": "/qn-ode-atlas/templates/evaluators/z15/descriptor.json",
+      "examples_status": "proposed_not_executed_as_written",
+      "examples_url": "/qn-ode-atlas/templates/evaluators/z15/examples.json",
+      "name": "trajectory_sensitivity",
+      "prompt_sha256": "08992864f6d052104d3665b54932e912aaaa34be43b9ee7df117cd855bcd4a71",
+      "prompt_url": "/qn-ode-atlas/templates/evaluators/z15/prompt.md",
+      "review_status": "independently_reviewed_scoped"
+    },
+    {
+      "axis_id": "z16",
+      "descriptor_sha256": "20132491572344213eedeb6f0c8bb967ee9f70de4c90c758f8373fab595ca66f",
+      "descriptor_url": "/qn-ode-atlas/templates/evaluators/z16/descriptor.json",
+      "examples_status": "proposed_not_executed_as_written",
+      "examples_url": "/qn-ode-atlas/templates/evaluators/z16/examples.json",
+      "name": "oscillation",
+      "prompt_sha256": "19fa262c78625e9aaea9ff861cc9c16d24f2d5ebcd7c584df1be9cff916d4292",
+      "prompt_url": "/qn-ode-atlas/templates/evaluators/z16/prompt.md",
+      "review_status": "independently_reviewed_scoped"
+    },
+    {
+      "axis_id": "z17",
+      "descriptor_sha256": "cd53aae31ae8cb1a37a96690218af3ff4202e5b4629eae9e33a1fa05c7dc7a9a",
+      "descriptor_url": "/qn-ode-atlas/templates/evaluators/z17/descriptor.json",
+      "examples_status": "proposed_not_executed_as_written",
+      "examples_url": "/qn-ode-atlas/templates/evaluators/z17/examples.json",
+      "name": "attractors_bifurcations",
+      "prompt_sha256": "a9e7993e54c70d45f52bf6a3f1b70f8fe169c528b642f3a0b3454c3873679c20",
+      "prompt_url": "/qn-ode-atlas/templates/evaluators/z17/prompt.md",
+      "review_status": "independently_reviewed_scoped"
+    },
+    {
+      "axis_id": "z18",
+      "descriptor_sha256": "049d7a6fc9d3e0f58317fac6208b205abe1d178d59fa9076bb37ee6719508428",
+      "descriptor_url": "/qn-ode-atlas/templates/evaluators/z18/descriptor.json",
+      "examples_status": "proposed_not_executed_as_written",
+      "examples_url": "/qn-ode-atlas/templates/evaluators/z18/examples.json",
+      "name": "singularity_margin",
+      "prompt_sha256": "95524b81f658ac78778ef2c3cdb86ffaf4a878bfb2613a09f00f15415c599c2e",
+      "prompt_url": "/qn-ode-atlas/templates/evaluators/z18/prompt.md",
+      "review_status": "independently_reviewed_scoped"
+    },
+    {
+      "axis_id": "z19",
+      "descriptor_sha256": "012614f1445c724cded7090893da43a6b8064e4adb19a2053854404da727e4c9",
+      "descriptor_url": "/qn-ode-atlas/templates/evaluators/z19/descriptor.json",
+      "examples_status": "proposed_not_executed_as_written",
+      "examples_url": "/qn-ode-atlas/templates/evaluators/z19/examples.json",
+      "name": "norm_dynamics",
+      "prompt_sha256": "b4270f98b863d15be5411224fdbe2a64fd7020749355c85b2e7f878b1eff2b19",
+      "prompt_url": "/qn-ode-atlas/templates/evaluators/z19/prompt.md",
+      "review_status": "independently_reviewed_scoped"
+    },
+    {
+      "axis_id": "z20",
+      "descriptor_sha256": "43c17643ece9df7445fc8d05ff8c0ace61d8b36c9caf68e8a3c59a098cc758c7",
+      "descriptor_url": "/qn-ode-atlas/templates/evaluators/z20/descriptor.json",
+      "examples_status": "proposed_not_executed_as_written",
+      "examples_url": "/qn-ode-atlas/templates/evaluators/z20/examples.json",
+      "name": "reducibility_symmetry",
+      "prompt_sha256": "3d789bc765d5fe22c1132d97e67ef26308a63c856016ba818c0db90a7322ab77",
+      "prompt_url": "/qn-ode-atlas/templates/evaluators/z20/prompt.md",
+      "review_status": "independently_reviewed_scoped"
+    }
+  ],
+  "role_prompts": [
+    {
+      "role": "ode-contributor",
+      "sha256": "d476a6415a1df486f4552bec7a4bdc891bcdceef9bef3f7746af888892d3b852",
+      "url": "/qn-ode-atlas/templates/prompts/ode-contributor.md"
+    },
+    {
+      "role": "algorithm-contributor",
+      "sha256": "62b7cb444bcdef6071867220c622e18b74cfe6cc0a79cb83bdfffe58a39ef099",
+      "url": "/qn-ode-atlas/templates/prompts/algorithm-contributor.md"
+    },
+    {
+      "role": "engineering-handoff",
+      "sha256": "c3671d4a6af589a1db8a5a859d1b858a4c68cf5b0369155550818d398774b7f8",
+      "url": "/qn-ode-atlas/templates/prompts/engineering-handoff.md"
+    }
+  ],
+  "schema_version": "frontend_trusted_resources_v1",
+  "semantics": "Mirrored exact reviewed operational descriptions and prompt originals. Proposed examples are not execution pass evidence; fixture admission is not production activation."
+}
